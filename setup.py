@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="beewi_smartclim",
-    version=os.getenv('VERSION'),
+    version="0.0.1",
     author="Vroume",
     author_email="none",
     description="Library to read data from BeeWi SmartClim sensor using Bluetooth LE (using bleak instead of bluepy).",
