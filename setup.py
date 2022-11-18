@@ -7,12 +7,12 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="beewi_smartclim",
     version=os.getenv('VERSION'),
-    author="alemuro",
-    author_email="hello@aleix.cloud",
-    description="Library to read data from BeeWi SmartClim sensor using Bluetooth LE",
+    author="Vroume",
+    author_email="none",
+    description="Library to read data from BeeWi SmartClim sensor using Bluetooth LE (using bleak instead of bluepy).",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/alemuro/beewi_smartclim",
+    url="https://github.com/Vroume/beewi_smartclim_bleak",
     packages=setuptools.find_packages(),
     license='MIT',
     classifiers=[
@@ -21,6 +21,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.5',
-    install_requires=['btlewrap>=0.0.8', 'bluepy'],
+    install_requires=['bleak>=0.19.4'],
     keywords='temperature and humidity sensor bluetooth low-energy ble beewi smartclim',
 )
