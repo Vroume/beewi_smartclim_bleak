@@ -21,6 +21,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.5',
-    install_requires=['bleak>=0.19.4'],
+    install_requires=['bleak>=0.19.2'],
     keywords='temperature and humidity sensor bluetooth low-energy ble beewi smartclim',
 )
